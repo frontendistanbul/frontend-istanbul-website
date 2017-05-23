@@ -1,0 +1,44 @@
+#about {
+  background: url(../images/backgrounds/about.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .about-content {
+    text-align: center;
+
+    h3 {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.44;
+      color: $color-dark;
+    }
+  }
+
+  .event-info {
+    margin-top: 20px;
+    h4 {
+      color: $color-primary;
+      font-size: 46px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    span {
+      display: block;
+      font-family: $font-secondary;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.17;
+      color: #3c2513;
+    }
+  }
+  .register {
+    padding: 30px 0;
+  }
+}

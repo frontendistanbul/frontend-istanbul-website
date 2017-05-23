@@ -1,0 +1,72 @@
+#intro {
+  background-image: url('../images/backgrounds/intro.png');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .intro-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo {
+    padding: 50px 0;
+    text-align: center;
+
+    img {
+      max-width: 125px;
+      width: 100%;
+    }
+  }
+
+  .slogan {
+    text-align: center;
+
+    h1 {
+      color: $color-secondary;
+      font-size: 44px;
+      font-weight: bold;
+    }
+  }
+
+  .info {
+    padding: 32px 0;
+
+    .box {
+      display: table;
+      margin: auto;
+      @media(max-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      .icon {
+        float: left;
+      }
+
+      .text {
+        float: left;
+        padding: 0 10px;
+        margin-top: 5px;
+
+        h3 {
+          margin: 0;
+          font-size: 46px;
+          font-weight: bold;
+          color: $color-primary;
+          line-height: 27px;
+        }
+
+        span {
+          display: block;
+          font-size: 22px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .register {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}

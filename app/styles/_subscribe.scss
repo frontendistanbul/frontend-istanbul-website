@@ -1,0 +1,46 @@
+#subscribe {
+  .form-group {
+    position: relative;
+    border: solid 1px #4e3219;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 55px 0 0;
+
+    .form-control {
+      border: 0;
+      box-shadow: none;
+      height: 72px;
+      border-radius: 6px;
+      font-size: 24px;
+      padding-right: 170px;
+      color: $color-secondary;
+      font-weight: bold;
+      font-family: $font-secondary;
+    }
+
+    ::-webkit-input-placeholder {
+      color: $color-secondary;
+    }
+
+    ::-moz-placeholder {
+      color: $color-secondary;
+    }
+
+    :-ms-input-placeholder {
+      color: $color-secondary;
+    }
+
+    :-moz-placeholder {
+      color: $color-secondary;
+    }
+
+    button {
+      height: 48px;
+      position: absolute;
+      right: 22px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

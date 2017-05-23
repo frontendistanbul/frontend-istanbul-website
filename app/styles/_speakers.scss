@@ -1,0 +1,59 @@
+#speakers {
+  .speakers {
+    margin-top: 50px;
+  }
+  .speaker {
+    margin-bottom: 30px;
+    .image {
+      img {
+        max-width: 100%;
+        border-radius: 6px;
+      }
+    }
+
+    .header {
+      padding: 15px 0;
+      h4 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.17;
+        margin: 0 0 5px;
+      }
+
+      span {
+        font-size: 18px;
+        color: $color-primary;
+        font-family: $font-secondary;
+        span {
+          font-style: italic;
+        }
+      }
+      .social-links {
+        margin-top: 8px;
+      }
+    }
+    .about {
+      padding: 20px 10px 15px 0;
+      position: relative;
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      &:after {
+        width: 190px;
+        height: 1px;
+        border-radius: 6px;
+        background: #50e3c2;
+      }
+      &:before {
+        height: 170px;
+        width: 1px;
+        border-radius: 6px;
+        background: #50e3c2;
+      }
+    }
+  }
+}
