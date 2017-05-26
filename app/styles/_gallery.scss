@@ -1,0 +1,11 @@
+#gallery {
+  & .gallery-images{
+    margin-top: 42px;
+  }
+   & img {
+	  display: inline-block;
+	  width: 100%;
+    margin-bottom: 1.6em;
+    border-radius: 4px;
+  }
+}

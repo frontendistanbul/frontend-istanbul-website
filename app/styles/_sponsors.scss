@@ -1,0 +1,25 @@
+#sponsors{
+   position: relative;
+   background: url("../images/backgrounds/hero-light.svg") no-repeat center bottom;
+   background-size:contain;
+    @media (max-width:$break-sm){
+         background-size:cover;
+       }
+   & .icons{
+     margin:auto;
+     margin-top:40px;
+     max-width: 820px;
+     & .image{
+       text-align: center;
+       margin-bottom: 40px;
+       height:44px;
+       @include vertical-center;
+     }
+     & img{
+       height: 44px;
+       @media (max-width:$break-sm){
+         height:35px;
+       }
+     }
+   }
+}
