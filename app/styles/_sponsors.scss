@@ -3,7 +3,8 @@
    background: url("../images/backgrounds/hero-light.svg") no-repeat center bottom;
    background-size:contain;
     @media (max-width:$break-sm){
-         background-size:cover;
+        background-size: inherit;
+        background-position: bottom;
        }
    & .icons{
      margin:auto;

@@ -1,5 +1,9 @@
 #follow{
   & .social-links{
+    margin-top:-10px; 
+    @media (max-width:$break-sm) {
+      margin-top: 10px;
+    }
     & li{
       padding:0 20px;      
     }
