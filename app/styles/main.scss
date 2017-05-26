@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-@import url( 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&subset=latin-ext');
+@import url( 'https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,600,700&subset=latin-ext');
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -10,9 +10,15 @@ $color-primary-hover: #f76152;
 $color-secondary: #4d3119;
 $color-dark: #4a4a4a;
 $color-light: #fff9eb;
+$color-coffee: #50e3c2;
 
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Titillium Web', sans-serif;
+
+//breakpoints
+$break-xs:450px;
+$break-sm:768px;
+$break-md: 992px;
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -41,3 +47,8 @@ body {
 @import "_subscribe";
 @import "_speakers";
 @import "_maps";
+@import "_schedule";
+@import "_follow";
+@import "_gallery";
+@import "_sponsors";
+@import "_footer";

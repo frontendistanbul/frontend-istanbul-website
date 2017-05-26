@@ -28,8 +28,47 @@
 
     .promotion {
       text-align: right;
-      width: 55%;
+      width: 60%;
       margin-left: auto;
+      margin-top:8%;
+      
+      @media (max-width:$break-md){
+         width: 80%;
+       }
+      @media (max-width:$break-sm){
+         width: 100%;
+       }
+      & h3{
+        position: relative;
+        &:after{
+          display: inline-block;
+          position: absolute;
+          bottom:-20px;
+          right:0;
+        }
+      }
+      & p{
+        margin-top:20px;
+      }
+      & .icon{
+        margin-top:24px;
+        & img{
+          height:107px;
+        }
+      }
+      & .location{
+        & a{
+        margin-top:25px;
+        }
+      }
     }
+  }
+}
+
+#map{
+  height:380px;
+  width:100%;
+  @media (max-width:$break-sm){
+    height:450px;
   }
 }

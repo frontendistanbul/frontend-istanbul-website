@@ -1,0 +1,33 @@
+#footer{
+  background-color: $color-light;
+  padding-top:15px;
+  padding-bottom:15px;
+  & .v-center.row{
+    @media (max-width:$break-sm){
+         display:inline-block;
+         width:100%;
+         margin:0;
+       }
+  }
+  & .image{
+    @media (max-width:$break-sm){
+         text-align: center;
+         margin-bottom: 40px;
+       }
+    & img{
+      max-height: 71px;
+    }
+  }
+  & .social-links{
+    & li{
+      margin:auto 10px;
+       @media (max-width:$break-sm){
+         margin-bottom: 40px;
+       }
+      & img{
+      width:48px;
+      height:auto;
+      }
+    }
+  }
+}
