@@ -1,13 +1,25 @@
 #intro {
-  background-image: url('../images/backgrounds/intro.png');
+  background-image: url("../images/backgrounds/index_bg.jpg");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
-  .intro-content {
-    position: relative;
+  .bg {
+    background: rgba(0, 0, 0, 0.77);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
+  }
+
+  .intro-content {
+    width: 100%;
+    position: relative;
+    z-index: 2;
   }
 
   .logo {
@@ -23,44 +35,54 @@
   .slogan {
     text-align: center;
 
+    p {
+      color: #ccc;
+    }
+
     h1 {
-      color: $color-secondary;
-      font-size: 44px;
+      color: #fff;
+      font-size: 43px;
       font-weight: bold;
     }
   }
 
   .info {
-    padding: 32px 0;
+    padding: 42px 0;
 
     .box {
       display: table;
       margin: auto;
-      @media(max-width: $break-sm) {
+      @media (max-width: $break-sm) {
         margin-bottom: 30px;
       }
 
       .icon {
         float: left;
+        svg {
+          font-size: 63px;
+          color: #fff;
+        }
       }
 
       .text {
         float: left;
-        padding: 0 10px;
+        padding-left: 30px;
         margin-top: 5px;
+        color: #fff;
 
         h3 {
           margin: 0;
-          font-size: 46px;
+          font-size: 42px;
           font-weight: bold;
           color: $color-primary;
-          line-height: 27px;
+          line-height: 22px;
         }
 
         span {
           display: block;
           font-size: 22px;
-          font-weight: 600;
+          font-weight: 400;
+          margin-top: 10px;
         }
       }
     }

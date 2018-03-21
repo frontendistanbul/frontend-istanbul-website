@@ -1,9 +1,9 @@
 .btn {
   border: 0;
   transition: all 0.2s ease;
-  border-radius: 6px;
-  font-size: 22px;
-  padding: 8px 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 21px 50px;
   text-align: center;
   margin: 0 auto;
   font-weight: bold;
@@ -24,10 +24,10 @@
     background: $color-primary-hover;
     color: $color-light;
   }
-  &:active{
-    &:focus{
+  &:active {
+    &:focus {
       background: $color-primary-hover;
-      outline: none
+      outline: none;
     }
   }
 }
@@ -45,11 +45,11 @@
     font-size: 44px;
     font-weight: bold;
     line-height: 1;
-    @media (max-width:$break-xs){
+    @media (max-width: $break-xs) {
       font-size: 30px;
     }
     &:after {
-      content: '';
+      content: "";
       display: block;
       width: 68px;
       height: 1px;
@@ -75,7 +75,7 @@
 }
 
 .rectangle-bg {
-  background-image: url('../images/backgrounds/rectangle.png');
+  background-image: url("../images/backgrounds/rectangle.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -88,11 +88,11 @@
     font-weight: bold;
     line-height: 1;
     color: $color-primary;
-    @media (max-width:$break-xs){
+    @media (max-width: $break-xs) {
       font-size: 30px;
     }
     &:after {
-      content: '';
+      content: "";
       display: block;
       width: 68px;
       height: 1px;
@@ -122,29 +122,27 @@
   }
 }
 
-.pr-0{
-  padding-right:0; 
+.pr-0 {
+  padding-right: 0;
 }
-.pl-0{
-  padding-left:0; 
+.pl-0 {
+  padding-left: 0;
 }
-.mt-25{
+.mt-25 {
   margin-top: 25px;
 }
 
-@media (max-width:$break-sm){
-  .text-center-sm{
+@media (max-width: $break-sm) {
+  .text-center-sm {
     text-align: center;
   }
 }
 
-@mixin vertical-center{
+@mixin vertical-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.v-center{
+.v-center {
   @include vertical-center;
 }
-
-
