@@ -21,6 +21,15 @@ $break-xs: 450px;
 $break-sm: 768px;
 $break-md: 992px;
 
+// transition
+//usage: @include transition([property],[duration],[easing]);
+@mixin transition($property: all, $duration: 0.2s, $ease: linear) {
+  -webkit-transition: $property $duration $ease;
+  -moz-transition: $property $duration $ease;
+  -o-transition: $property $duration $ease;
+  transition: $property $duration $ease;
+}
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -42,6 +51,7 @@ body {
   color: $color-secondary;
 }
 
+@import "_navbar";
 @import "_intro";
 @import "_utils";
 @import "_about";

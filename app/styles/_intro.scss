@@ -1,9 +1,13 @@
 #intro {
   background-image: url("../images/backgrounds/index_bg.jpg");
   min-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .bg {
     background: rgba(0, 0, 0, 0.77);
@@ -23,11 +27,11 @@
   }
 
   .logo {
-    padding: 50px 0;
+    padding-bottom: 50px;
     text-align: center;
 
     img {
-      max-width: 125px;
+      max-width: 300px;
       width: 100%;
     }
   }
