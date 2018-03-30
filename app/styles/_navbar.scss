@@ -1,5 +1,8 @@
 .navbar-custom {
   border-bottom: 1px solid #3a3a3a;
+  background: rgba($color: #000000, $alpha: 0);
+  transition: linear .3s;
+  
 
   li {
     a {
@@ -15,5 +18,8 @@
         background: transparent;
       }
     }
+  }
+  &.with-bg {
+    background: rgba($color: #000000, $alpha: 0.9);
   }
 }

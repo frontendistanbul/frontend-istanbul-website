@@ -56,9 +56,6 @@
     .box {
       display: table;
       margin: auto;
-      @media (max-width: $break-sm) {
-        margin-bottom: 30px;
-      }
 
       .icon {
         float: left;
@@ -94,5 +91,29 @@
   .register {
     text-align: center;
     margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: $break-sm) {
+  #intro {
+    height: 210vh;
+    .logo {
+      padding: 60px 0 20px;
+    }
+    .info {
+      .box {
+        margin-bottom: 30px;
+        .icon {
+          text-align: center;
+          float: none;
+          margin-bottom: 10px;
+        }
+        .text{
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
   }
 }
