@@ -1,6 +1,6 @@
 #sponsors{
    position: relative;
-   background: url("../images/backgrounds/hero-light.svg") no-repeat center bottom;
+   background-color: $white;
    background-size:contain;
     @media (max-width:$break-sm){
         background-size: inherit;
@@ -22,5 +22,9 @@
          height:35px;
        }
      }
+   }
+
+   .sponsor-register {
+     text-align: center;
    }
 }

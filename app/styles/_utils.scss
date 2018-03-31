@@ -49,14 +49,6 @@
     @media (max-width: $break-xs) {
       font-size: 30px;
     }
-    &:after {
-      content: "";
-      display: block;
-      width: 68px;
-      height: 1px;
-      background: #79edd3;
-      margin: 10px auto 0;
-    }
   }
 
   p {
