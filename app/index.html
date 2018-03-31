@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="tr">
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
@@ -27,6 +28,8 @@
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
   <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,20 +39,67 @@
 
   <div class="wrapper">
     <section id="intro">
+      <div class="bg"></div>
+      <nav class="navbar-custom navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#intro">Anasayfa</a>
+              </li>
+              <li>
+                <a href="#about">Hakkında</a>
+              </li>
+              <li>
+                <a href="#speakers">Konuşmacılar</a>
+              </li>
+              <li>
+                <a href="#maps">Ulaşım</a>
+              </li>
+              <li>
+                <a href="#schedule">Program</a>
+              </li>
+              <li>
+                <a href="#gallery">Görseller</a>
+              </li>
+              <li>
+                <a href="#sponsors">Sponsorlar</a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </nav>
+
       <div class="container">
         <div class="intro-content">
           <div class="logo">
-            <img src="images/logo.png" alt="Frontend istanbul">
+            <a href="./" title="Frontend İstanbul">
+              <img src="images/fristlogo.svg" alt="Frontend istanbul">
+            </a>
           </div>
           <div class="slogan">
-            <h1>İstanbul’un Front-end Buluşması!</h1>
-            <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for.</p>
+            <h1>Oğuzhan Aslan Conf</h1>
+            <p>Frontend Teknolojileri Konferansı</p>
+            <p>A one-day, community conference dedicated to the designers, developers, and other CSS aficionados building the
+              world’s most engaging user interfaces. A part of global CSSConf Family.
+            </p>
+            <p></p>
           </div>
           <div class="info clearfix">
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="box">
                 <div class="icon">
-                  <img src="images/icons/calendar.svg" alt="">
+                  <i class="far fa-calendar"></i>
                 </div>
                 <div class="text">
                   <h3>02-04</h3>
@@ -60,22 +110,22 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="box">
                 <div class="icon">
-                  <img src="images/icons/map.svg" alt="">
+                  <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="text">
                   <h3>İstanbul</h3>
-                  <span>Bomonti Hilton</span>
+                  <span>Boğaziçi Üniversitesi</span>
                 </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="box">
                 <div class="icon">
-                  <img src="images/icons/megaphone.svg" alt="">
+                  <i class="fas fa-bullhorn"></i>
                 </div>
                 <div class="text">
-                  <h3>178</h3>
-                  <span>Konusmacı</span>
+                  <h3>8</h3>
+                  <span>Konuşmacı</span>
                 </div>
               </div>
             </div>
@@ -85,7 +135,6 @@
           </div>
         </div>
       </div>
-      <img src="images/backgrounds/hero.svg" class="hero-bg" alt="">
     </section>
     <section id="about" class="section">
       <div class="container">
@@ -96,8 +145,10 @@
         <div class="about-content">
           <div class="texts">
             <h3>Computer Hardware Desktops And Notebooks</h3>
-            <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of uncompressed digital streams. Essentially, HDMI can be considered an alternative method to transmitting data streams,
-              rather than making use of conventional methods such as coaxial cabling, VGA, or component video equipment. What Type of Sources May Be Employed Using HDMI?</p>
+            <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission
+              of uncompressed digital streams. Essentially, HDMI can be considered an alternative method to transmitting
+              data streams, rather than making use of conventional methods such as coaxial cabling, VGA, or component video
+              equipment. What Type of Sources May Be Employed Using HDMI?</p>
           </div>
           <div class="event-info">
             <h4>02-04</h4>
@@ -115,14 +166,18 @@
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="promotion">
               <h3>Hemen Kayıt Olun</h3>
-              <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+              <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the
+                transmission.
+              </p>
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="eposta@adresiniz.com">
-              <button class="btn btn-primary">Gönder</button>
-            </div>
+            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="eposta@adresiniz.com" name="EMAIL" id="mce-EMAIL">
+                <button class="btn btn-primary" id="mc-embedded-subscribe" name="subscribe">Gönder</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -142,21 +197,29 @@
                 </div>
                 <div class="header">
                   <h4>Oğuz Kılıç</h4>
-                  <span><span>Front-end Developer</span>, @iyzico</span>
+                  <span>
+                    <span>Front-end Developer</span>, @iyzico</span>
                   <ul class="social-links">
                     <li>
-                      <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/instagram.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div class="about">
-                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for
+                    the transmission.</p>
                 </div>
                 <div class="border"></div>
               </div>
@@ -168,21 +231,29 @@
                 </div>
                 <div class="header">
                   <h4>Oğuz Kılıç</h4>
-                  <span><span>Front-end Developer</span>, @iyzico</span>
+                  <span>
+                    <span>Front-end Developer</span>, @iyzico</span>
                   <ul class="social-links">
                     <li>
-                      <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/instagram.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div class="about">
-                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for
+                    the transmission.</p>
                 </div>
                 <div class="border"></div>
               </div>
@@ -194,21 +265,29 @@
                 </div>
                 <div class="header">
                   <h4>Oğuz Kılıç</h4>
-                  <span><span>Front-end Developer</span>, @iyzico</span>
+                  <span>
+                    <span>Front-end Developer</span>, @iyzico</span>
                   <ul class="social-links">
                     <li>
-                      <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/instagram.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div class="about">
-                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for
+                    the transmission.</p>
                 </div>
                 <div class="border"></div>
               </div>
@@ -220,21 +299,29 @@
                 </div>
                 <div class="header">
                   <h4>Oğuz Kılıç</h4>
-                  <span><span>Front-end Developer</span>, @iyzico</span>
+                  <span>
+                    <span>Front-end Developer</span>, @iyzico</span>
                   <ul class="social-links">
                     <li>
-                      <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/instagram.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div class="about">
-                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for
+                    the transmission.</p>
                 </div>
                 <div class="border"></div>
               </div>
@@ -246,21 +333,29 @@
                 </div>
                 <div class="header">
                   <h4>Oğuz Kılıç</h4>
-                  <span><span>Front-end Developer</span>, @iyzico</span>
+                  <span>
+                    <span>Front-end Developer</span>, @iyzico</span>
                   <ul class="social-links">
                     <li>
-                      <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/instagram.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div class="about">
-                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for
+                    the transmission.</p>
                 </div>
                 <div class="border"></div>
               </div>
@@ -272,21 +367,29 @@
                 </div>
                 <div class="header">
                   <h4>Oğuz Kılıç</h4>
-                  <span><span>Front-end Developer</span>, @iyzico</span>
+                  <span>
+                    <span>Front-end Developer</span>, @iyzico</span>
                   <ul class="social-links">
                     <li>
-                      <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/facebook.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/instagram.svg" alt="">
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                      <a href="#">
+                        <img src="images/icons/twitter.svg" alt="">
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div class="about">
-                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                  <p>HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for
+                    the transmission.</p>
                 </div>
                 <div class="border"></div>
               </div>
@@ -303,7 +406,7 @@
       <div class="bg"></div>
       <div class="container custom">
         <div class="promotion">
-           <div class="icon visible-xs hidden-sm hidden-md hidden-lg col-xs-12">
+          <div class="icon visible-xs hidden-sm hidden-md hidden-lg col-xs-12">
             <img src="images/icons/map.svg" alt="">
           </div>
           <div class="col-md-10 col-sm-10 col-xs-12 pr-0">
@@ -330,116 +433,139 @@
           <div class="col-xs-12 timetable">
             <div class="row">
               <ul class="nav nav-tabs" role="tablist">
-                  <li role="presentation" class="active timetable-tab"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab">
-                      <h1>1. Gün</h1><p>02.04.2017</p>
-                      <div></div>
-                    </a>
-                  </li>
-                  <li role="presentation" class="timetable-tab"><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab">
-                      <h1>2. Gün</h1><p>03.04.2017</p>
-                      <div></div>
-                    </a>
-                  </li>
-                  <li role="presentation" class="timetable-tab"><a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab">
-                      <h1>3. Gün</h1><p>04.04.2017</p>
-                      <div></div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="tab_1">
-                  <div id="events" role="tablist" aria-multiselectable="true">
-                    <div class="col-md-12">
-                      <div class="event">
-                        <div class="row">
-                          <a class="event-header col-md-12" role="button" data-toggle="collapse" data-parent=".events" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="row">
-                              <div class="image col-md-2 col-sm-3 col-xs-12 hidden-xs">
-                                <img src="images/schedule/speaker.jpg" alt="Speaker">
-                              </div>
-                              <div class="title col-md-10 col-sm-9 col-xs-12">
-                                <h2><img src="images/icons/time.svg"><span>09:00</span></h2>
-                                <h3>Açılış Konuşması</h3>
-                                <div class="collapse-arrow">
-                                  <img src="images/icons/arrow.svg">
-                                </div>
+                <li role="presentation" class="active timetable-tab">
+                  <a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab">
+                    <h1>1. Gün</h1>
+                    <p>02.04.2017</p>
+                    <div></div>
+                  </a>
+                </li>
+                <li role="presentation" class="timetable-tab">
+                  <a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab">
+                    <h1>2. Gün</h1>
+                    <p>03.04.2017</p>
+                    <div></div>
+                  </a>
+                </li>
+                <li role="presentation" class="timetable-tab">
+                  <a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab">
+                    <h1>3. Gün</h1>
+                    <p>04.04.2017</p>
+                    <div></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="tab_1">
+                <div id="events" role="tablist" aria-multiselectable="true">
+                  <div class="col-md-12">
+                    <div class="event">
+                      <div class="row">
+                        <a class="event-header col-md-12" role="button" data-toggle="collapse" data-parent=".events" href="#collapse1" aria-expanded="true"
+                          aria-controls="collapseOne">
+                          <div class="row">
+                            <div class="image col-md-2 col-sm-3 col-xs-12 hidden-xs">
+                              <img src="images/schedule/speaker.jpg" alt="Speaker">
+                            </div>
+                            <div class="title col-md-10 col-sm-9 col-xs-12">
+                              <h2>
+                                <img src="images/icons/time.svg">
+                                <span>09:00</span>
+                              </h2>
+                              <h3>Açılış Konuşması</h3>
+                              <div class="collapse-arrow">
+                                <img src="images/icons/arrow.svg">
                               </div>
                             </div>
-                          </a>
-                          <div id="collapse1" class="event-body col-md-12 collapse in" role="tabpanel">
-                            <div class="event-body--inner col-md-offset-2 col-md-10">
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <p>
-                                    HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of uncompressed digital streams. Essentially, HDMI can be considered an alternative method to transmitting data streams, rather than making use of.
-                                  </p>
-                                  <h3>Murat Incesu</h3>
-                                  <i>Co-Founder,TazeBT</i>
-                                </div>
+                          </div>
+                        </a>
+                        <div id="collapse1" class="event-body col-md-12 collapse in" role="tabpanel">
+                          <div class="event-body--inner col-md-offset-2 col-md-10">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>
+                                  HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of
+                                  uncompressed digital streams. Essentially, HDMI can be considered an alternative method
+                                  to transmitting data streams, rather than making use of.
+                                </p>
+                                <h3>Murat Incesu</h3>
+                                <i>Co-Founder,TazeBT</i>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="event">
-                        <div class="row">
-                          <a class="event-header collapsed col-md-12" role="button" data-toggle="collapse" data-parent=".events" href="#collapse2" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="row">
-                              <div class="image coffee-break col-md-2 col-sm-3 col-xs-12 hidden-xs">
-                                <img src="images/icons/coffee-cup.svg" alt="Kahve Arası">
-                              </div>
-                              <div class="title col-md-10 col-sm-9 col-xs-12">
-                                <h2><img src="images/icons/time.svg"><span>09:00</span></h2>
-                                <h3>Kahve Arası</h3>
-                                <div class="collapse-arrow">
-                                  <img src="images/icons/arrow.svg">
-                                </div>
+                    </div>
+                    <div class="event">
+                      <div class="row">
+                        <a class="event-header collapsed col-md-12" role="button" data-toggle="collapse" data-parent=".events" href="#collapse2"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <div class="row">
+                            <div class="image coffee-break col-md-2 col-sm-3 col-xs-12 hidden-xs">
+                              <img src="images/icons/coffee-cup.svg" alt="Kahve Arası">
+                            </div>
+                            <div class="title col-md-10 col-sm-9 col-xs-12">
+                              <h2>
+                                <img src="images/icons/time.svg">
+                                <span>09:00</span>
+                              </h2>
+                              <h3>Kahve Arası</h3>
+                              <div class="collapse-arrow">
+                                <img src="images/icons/arrow.svg">
                               </div>
                             </div>
-                          </a>
-                          <div id="collapse2" class="event-body col-md-12 collapse" role="tabpanel">
-                            <div class="event-body--inner col-md-offset-2 col-md-10">
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <p>
-                                    HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of uncompressed digital streams. Essentially, HDMI can be considered an alternative method to transmitting data streams, rather than making use of.
-                                  </p>
-                                  <h3>Murat Incesu</h3>
-                                  <i>Co-Founder,TazeBT</i>
-                                </div>
+                          </div>
+                        </a>
+                        <div id="collapse2" class="event-body col-md-12 collapse" role="tabpanel">
+                          <div class="event-body--inner col-md-offset-2 col-md-10">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>
+                                  HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of
+                                  uncompressed digital streams. Essentially, HDMI can be considered an alternative method
+                                  to transmitting data streams, rather than making use of.
+                                </p>
+                                <h3>Murat Incesu</h3>
+                                <i>Co-Founder,TazeBT</i>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="event">
-                        <div class="row">
-                          <a class="event-header collapsed col-md-12" role="button" data-toggle="collapse" data-parent=".events" href="#collapse3" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="row">
-                              <div class="image col-md-2 col-sm-3 col-xs-12 hidden-xs">
-                                <img src="images/schedule/speaker.jpg" alt="Speaker">
-                              </div>
-                              <div class="title col-md-10 col-sm-9 col-xs-12">
-                                <h2><img src="images/icons/time.svg"><span>09:00</span></h2>
-                                <h3>Söyleşi - PHP’nin dünü yarını</h3>
-                                <div class="collapse-arrow">
-                                  <img src="images/icons/arrow.svg">
-                                </div>
+                    </div>
+                    <div class="event">
+                      <div class="row">
+                        <a class="event-header collapsed col-md-12" role="button" data-toggle="collapse" data-parent=".events" href="#collapse3"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          <div class="row">
+                            <div class="image col-md-2 col-sm-3 col-xs-12 hidden-xs">
+                              <img src="images/schedule/speaker.jpg" alt="Speaker">
+                            </div>
+                            <div class="title col-md-10 col-sm-9 col-xs-12">
+                              <h2>
+                                <img src="images/icons/time.svg">
+                                <span>09:00</span>
+                              </h2>
+                              <h3>Söyleşi - PHP’nin dünü yarını</h3>
+                              <div class="collapse-arrow">
+                                <img src="images/icons/arrow.svg">
                               </div>
                             </div>
-                          </a>
-                          <div id="collapse3" class="event-body col-md-12 collapse" role="tabpanel">
-                            <div class="event-body--inner col-md-offset-2 col-md-10">
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <p>
-                                    HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of uncompressed digital streams. Essentially, HDMI can be considered an alternative method to transmitting data streams, rather than making use of.
-                                  </p>
-                                  <h3>Murat Incesu</h3>
-                                  <i>Co-Founder,TazeBT</i>
-                                </div>
+                          </div>
+                        </a>
+                        <div id="collapse3" class="event-body col-md-12 collapse" role="tabpanel">
+                          <div class="event-body--inner col-md-offset-2 col-md-10">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <p>
+                                  HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission of
+                                  uncompressed digital streams. Essentially, HDMI can be considered an alternative method
+                                  to transmitting data streams, rather than making use of.
+                                </p>
+                                <h3>Murat Incesu</h3>
+                                <i>Co-Founder,TazeBT</i>
                               </div>
                             </div>
                           </div>
@@ -448,12 +574,13 @@
                     </div>
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="tab_2">tab 2</div>
-                <div role="tabpanel" class="tab-pane" id="tab_3">tab 3</div>
               </div>
+              <div role="tabpanel" class="tab-pane" id="tab_2">tab 2</div>
+              <div role="tabpanel" class="tab-pane" id="tab_3">tab 3</div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <section id="follow" class="section rectangle-bg">
       <div class="container">
@@ -462,16 +589,24 @@
             <div class="promotion">
               <h3>Bizi Takip Edin</h3>
               <div class="row">
-                <p class="col-md-6 col-sm-6 col-xs-12">HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the transmission.</p>
+                <p class="col-md-6 col-sm-6 col-xs-12">HDMI, or high definition multimedia interface, is a type of audio and video interface that is used for the
+                  transmission.
+                </p>
                 <ul class="social-links col-md-6 col-sm-6 col-xs-12 text-right text-center-sm">
                   <li>
-                    <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                    <a href="#">
+                      <img src="images/icons/facebook.svg" alt="">
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                    <a href="#">
+                      <img src="images/icons/twitter.svg" alt="">
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                    <a href="#">
+                      <img src="images/icons/instagram.svg" alt="">
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -495,13 +630,13 @@
             <div class="col-md-4 col-sm-6 col-xs-12">
               <img src="images/gallery/6.png">
               <img src="images/gallery/3.png">
-            </div>  
+            </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
               <img src="images/gallery/2.png">
             </div>
             <div class="col-md-8 hidden-sm hidden-xs">
-              <img src="images/gallery/4.png">              
-            </div>  
+              <img src="images/gallery/4.png">
+            </div>
           </div>
         </div>
       </div>
@@ -514,14 +649,20 @@
         </div>
         <div class="row">
           <div class="icons">
-            <div class="col-md-12 col-sm-12 col-xs-6">
+              <div class="col-md-12 section-subtitle">
+                <h3>Ana Sponsor</h3>
+              </div>
+            <div class="col-md-12">
               <div class="image">
                 <img src="images/icons/sponsors/taze.png" alt="Taze">
               </div>
             </div>
+            <div class="col-md-12 section-subtitle">
+              <h3>Gümüş Sponsorlar</h3>
+            </div>
             <div class="col-md-4 col-sm-6 col-xs-6">
               <div class="image">
-                <img src="images/icons/sponsors/sketch3.svg" alt="Sketch3">                
+                <img src="images/icons/sponsors/sketch3.svg" alt="Sketch3">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6">
@@ -529,13 +670,16 @@
                 <img src="images/icons/sponsors/littleplane.svg" alt="Little Plane">
               </div>
             </div>
-             <div class="col-md-4 col-sm-6 col-xs-6">
-               <div class="image">
+            <div class="col-md-4 col-sm-6 col-xs-6">
+              <div class="image">
                 <img src="images/icons/sponsors/balsamiq.svg" alt="Balsamiq">
               </div>
             </div>
-             <div class="col-md-3 col-sm-6 col-xs-6">
-               <div class="image">
+            <div class="col-md-12 section-subtitle">
+              <h3>Gümüş Sponsorlar</h3>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="image">
                 <img src="images/icons/sponsors/arcelik.svg" alt="Arçelik">
               </div>
             </div>
@@ -562,28 +706,29 @@
       <section id="footer">
         <div class="container">
           <div class="row v-center">
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-4 col-xs-12">
               <div class="image">
-                <img src="images/logo.png" alt="Frontend Istanbul Logo">
+                <img src="images/fristlogo.svg" alt="Frontend Istanbul Logo">
               </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-4 col-xs-12">
               <ul class="social-links text-center">
                 <li>
-                  <a href="#"><img src="images/icons/facebook.svg" alt=""></a>
+                  <a href="#">
+                    <img src="images/icons/facebook.svg" alt="">
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="images/icons/instagram.svg" alt=""></a>
+                  <a href="#">
+                    <img src="images/icons/instagram.svg" alt="">
+                  </a>
                 </li>
                 <li>
-                  <a href="#"><img src="images/icons/twitter.svg" alt=""></a>
+                  <a href="#">
+                    <img src="images/icons/twitter.svg" alt="">
+                  </a>
                 </li>
               </ul>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="image text-right">
-                <img src="images/icons/sponsors/taze.png" alt="Taze Logo">
-              </div>
             </div>
           </div>
         </div>
@@ -593,10 +738,10 @@
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-    (function(b, o, i, l, e, r) {
+    (function (b, o, i, l, e, r) {
       b.GoogleAnalyticsObject = l;
       b[l] || (b[l] =
-        function() {
+        function () {
           (b[l].q = b[l].q || []).push(arguments)
         });
       b[l].l = +new Date;
@@ -642,8 +787,8 @@
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var feistMarker = {
-          url: 'images/icons/map.svg',
-        };
+        url: 'images/icons/map.svg',
+      };
       map = new google.maps.Map(document.getElementById('map'), myOptions);
       marker = new google.maps.Marker({
         map: map,
@@ -653,7 +798,7 @@
       infowindow = new google.maps.InfoWindow({
         content: '<strong>KWORKS</strong><br>Ankara, Turkey<br>'
       });
-      google.maps.event.addListener(marker, 'click', function() {
+      google.maps.event.addListener(marker, 'click', function () {
         infowindow.open(map, marker);
       });
     }
@@ -662,4 +807,3 @@
 </body>
 
 </html>
- 

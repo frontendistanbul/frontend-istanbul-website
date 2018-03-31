@@ -10,23 +10,27 @@
        }
   }
   & .image{
+    text-align: left;
     @media (max-width:$break-sm){
          text-align: center;
          margin-bottom: 40px;
        }
     & img{
-      max-height: 71px;
+      width: 180px;
+      opacity: 0.7;
+      opacity: 1;
     }
   }
   & .social-links{
+    text-align: right;
     & li{
       margin:auto 10px;
        @media (max-width:$break-sm){
          margin-bottom: 40px;
        }
-      & img{
-      width:48px;
-      height:auto;
+      & img{    
+        width: 36px;
+        height:auto;
       }
     }
   }
