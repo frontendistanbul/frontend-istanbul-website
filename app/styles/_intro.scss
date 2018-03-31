@@ -10,7 +10,7 @@
   justify-content: center;
 
   .bg {
-    background: rgba(0, 0, 0, 0.77);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -27,11 +27,12 @@
   }
 
   .logo {
-    padding-bottom: 50px;
+    float: left;
+    padding-bottom: 10px;
     text-align: center;
 
     img {
-      max-width: 300px;
+      max-width: 120px;
       width: 100%;
     }
   }
@@ -72,11 +73,12 @@
         color: #fff;
 
         h3 {
+          text-align: center;
           margin: 0;
-          font-size: 42px;
-          font-weight: bold;
+          font-size: 60px;
+          font-weight: normal;
           color: $color-primary;
-          line-height: 22px;
+          line-height: 28px;
         }
 
         span {
