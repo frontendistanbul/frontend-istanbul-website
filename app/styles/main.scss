@@ -51,6 +51,11 @@ body {
   color: $color-secondary;
 }
 
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: transparent;
+}
+
 @import "_navbar";
 @import "_intro";
 @import "_utils";

@@ -2,11 +2,14 @@ var screenHeight = $(window).height();
 
 $(function() {
   $('#nav-button').click(function() {
-    $(this).toggleClass('active');
+    var _this = $(this);
+    _this.toggleClass('active');
     $('#overlay').toggleClass('open');
   });
 
-  $('.navbar-nav li a[href*="#"]:not([href="#"])').click(function() {
+  $('.nav a[href*="#"]:not([href="#"])').click(function() {
+    $('#overlay').toggleClass('open');
+    $('.navbar-toggle').toggleClass('active');
     if (
       location.pathname.replace(/^\//, '') ==
         this.pathname.replace(/^\//, '') &&
