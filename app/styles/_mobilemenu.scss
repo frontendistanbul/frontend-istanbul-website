@@ -1,0 +1,185 @@
+#nav-button {
+  transition: 0.2s all cubic-bezier(0.63, 0.62, 0.48, 1.64);
+  position: fixed;
+  z-index: 10000;
+  top: 20px;
+  right: 0;
+  display: block;
+  .line-1,
+  .line-2,
+  .line-3 {
+    transition: 0.2s all cubic-bezier(0.63, 0.62, 0.48, 1.64);
+    background-color: #fff;
+    height: 3px;
+    margin-bottom: 7px;
+    width: 30px;
+    display: block;
+  }
+  .line-1 {
+  }
+  .line-2 {
+    transition: 0.2s all cubic-bezier(0.63, 0.62, 0.48, 1.64);
+  }
+  .line-3 {
+    transition: 0.2s all cubic-bezier(0.63, 0.62, 0.48, 1.64);
+    margin-bottom: 0;
+  }
+  &:hover {
+    .line-1 {
+      transform: translateY(-2px);
+    }
+    .line-3 {
+      transform: translateY(1px);
+    }
+  }
+}
+#mobile-nav-button.active {
+  .line-1 {
+    transform: translateY(-2px);
+    transform: rotate(45deg) translateY(-1px);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    background: #fff;
+  }
+  .line-3 {
+    transform: translateY(1px);
+    transform: rotate(-45deg) translateY(-1px);
+    transform-origin: left bottom;
+    background: #fff;
+  }
+  .line-2 {
+    opacity: 0;
+    filter: alpha(opacity = 0);
+  }
+}
+#nav-button.active {
+  .line-1 {
+    transform: translateY(-2px);
+    transform: rotate(45deg) translateY(-1px);
+    transform-origin: left top;
+    background: #fff;
+  }
+  .line-3 {
+    transform: translateY(1px);
+    transform: rotate(-45deg) translateY(-1px);
+    transform-origin: left bottom;
+    background: #fff;
+  }
+  .line-2 {
+    opacity: 0;
+  }
+}
+
+.overlay {
+  position: fixed;
+  background: $color-primary;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  &.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+    li {
+      -webkit-animation: fadeInRight 0.5s ease forwards;
+      animation: fadeInRight 0.5s ease forwards;
+      -webkit-animation-delay: 0.35s;
+      animation-delay: 0.35s;
+
+      @for $i from 1 to 10 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 0.15s;
+        }
+      }
+    }
+  }
+  nav {
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    p {
+      font-size: 0.4em;
+      display: block;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      margin-top: -1%;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    li {
+      display: block;
+      height: calc(100% / 7);
+      height: 14.2%;
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+      a {
+        display: block;
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        overflow: hidden;
+        font-size: 32px;
+        &:hover:after,
+        &:focus:after,
+        &:active:after {
+          width: 100%;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          height: 2px;
+          background: #fff;
+          -webkit-transition: 0.35s;
+          transition: 0.35s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}

@@ -1,6 +1,11 @@
 var screenHeight = $(window).height();
 
 $(function() {
+  $('#nav-button').click(function() {
+    $(this).toggleClass('active');
+    $('#overlay').toggleClass('open');
+  });
+
   $('.navbar-nav li a[href*="#"]:not([href="#"])').click(function() {
     if (
       location.pathname.replace(/^\//, '') ==
