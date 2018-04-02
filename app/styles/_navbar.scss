@@ -7,31 +7,45 @@
 }
 
 .navbar-custom {
-  border-bottom: 1px solid $color-primary;
-  background: rgba($color: #FFF, $alpha: 1);
-  transition: linear .3s;
-
-  .navbar-nav {
-    float: right;
-  }
-
+  border-bottom: 1px solid #3a3a3a;
+  background: rgba($color: #000000, $alpha: 0);
+  transition: linear 0.3s;
+  font-family: "Titillium Web", sans-serif;
 
   li {
     a {
       font-size: 14px;
-      color: #000;
+      color: #fff;
       text-transform: uppercase;
       letter-spacing: 0.8px;
-      font-weight: normal;
+      font-weight: 500;
       @include transition();
       &:hover,
-      &focus {
+      &:focus {
         color: $color-primary;
         background: transparent;
       }
     }
   }
   &.with-bg {
-    background: rgba($color: #FFF, $alpha: 1);
+    background: rgba($color: #000000, $alpha: 0.9);
+  }
+}
+
+// Mobile Navbar
+.navbar-toggle {
+  background-color: $color-primary;
+  border-radius: 3px !important;
+  .icon-bar {
+    background-color: #fff;
+  }
+}
+
+.navbar-collapse.in,
+.navbar-collapse.collapsing {
+  background: #000;
+  min-height: 100vh;
+  .logo {
+    display: none;
   }
 }

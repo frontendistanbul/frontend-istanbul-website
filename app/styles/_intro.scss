@@ -10,7 +10,7 @@
   justify-content: center;
 
   .bg {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.54);
     position: absolute;
     top: 0;
     left: 0;
@@ -24,15 +24,18 @@
     width: 100%;
     position: relative;
     z-index: 2;
+    @media (max-width: $break-xs) {
+      padding-top: 70px;
+    }
   }
 
   .logo {
-    float: left;
-    padding-bottom: 10px;
     text-align: center;
+    display: block;
+    padding-bottom: 20px;
 
     img {
-      max-width: 120px;
+      max-width: 320px;
       width: 100%;
     }
   }
@@ -40,19 +43,39 @@
   .slogan {
     text-align: center;
 
-    p {
-      color: #ccc;
+    h3 {
+      color: $color-primary;
+      font-size: 26px;
+      @media (max-width: $break-xs) {
+        font-size: 14px;
+      }
+    }
+
+    h5 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 300;
+      letter-spacing: 5px;
     }
 
     h1 {
       color: #fff;
-      font-size: 43px;
+      font-size: 72px;
       font-weight: bold;
+
+      @media (max-width: $break-xs) {
+        font-size: 30px;
+        margin: 5px 0;
+      }
     }
   }
 
   .info {
     padding: 42px 0;
+
+    @media (max-width: $break-xs) {
+      padding: 15px 0;
+    }
 
     .box {
       display: table;
@@ -71,14 +94,19 @@
         padding-left: 30px;
         margin-top: 5px;
         color: #fff;
+        text-align: center;
 
         h3 {
           text-align: center;
           margin: 0;
-          font-size: 60px;
-          font-weight: normal;
+          font-size: 52px;
+          font-weight: 600;
           color: $color-primary;
-          line-height: 28px;
+
+          @media (max-width: $break-xs) {
+            font-size: 30px;
+            line-height: 12px;
+          }
         }
 
         span {
@@ -96,10 +124,9 @@
   }
 }
 
-
 @media (max-width: $break-sm) {
   #intro {
-    height: 210vh;
+    // height: 210vh;
     .logo {
       padding: 60px 0 20px;
     }
@@ -111,7 +138,7 @@
           float: none;
           margin-bottom: 10px;
         }
-        .text{
+        .text {
           padding: 0;
           text-align: center;
         }
