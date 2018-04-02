@@ -25,7 +25,6 @@
     position: relative;
     z-index: 2;
     @media (max-width: $break-xs) {
-      padding-top: 70px;
     }
   }
 
@@ -34,29 +33,21 @@
     display: block;
     padding-bottom: 20px;
 
+    @media (max-width: $break-xs) {
+      padding-bottom: 10px;
+    }
+
     img {
       max-width: 320px;
       width: 100%;
+      @media (max-width: $break-xs) {
+        max-width: 180px;
+      }
     }
   }
 
   .slogan {
     text-align: center;
-
-    h3 {
-      color: $color-primary;
-      font-size: 26px;
-      @media (max-width: $break-xs) {
-        font-size: 14px;
-      }
-    }
-
-    h5 {
-      font-size: 24px;
-      color: #fff;
-      font-weight: 300;
-      letter-spacing: 5px;
-    }
 
     h1 {
       color: #fff;
@@ -66,6 +57,25 @@
       @media (max-width: $break-xs) {
         font-size: 30px;
         margin: 5px 0;
+      }
+    }
+
+    h3 {
+      color: $color-primary;
+      font-size: 26px;
+      @media (max-width: $break-xs) {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+    }
+
+    h5 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 300;
+      letter-spacing: 5px;
+      @media (max-width: $break-xs) {
+        font-size: 15px;
       }
     }
   }
@@ -106,6 +116,8 @@
           @media (max-width: $break-xs) {
             font-size: 30px;
             line-height: 12px;
+            display: inline;
+            margin-right: 5px;
           }
         }
 
@@ -114,6 +126,9 @@
           font-size: 22px;
           font-weight: 400;
           margin-top: 10px;
+          @media (max-width: $break-xs) {
+            display: inline;
+          }
         }
       }
     }
@@ -126,10 +141,6 @@
 
 @media (max-width: $break-sm) {
   #intro {
-    // height: 210vh;
-    .logo {
-      padding: 60px 0 20px;
-    }
     .info {
       .box {
         margin-bottom: 30px;
