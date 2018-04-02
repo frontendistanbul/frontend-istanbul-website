@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Front End İstanbul - İstanbul’un Front-end Buluşması!</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f76152">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#f76152">
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="styles/main.css">
@@ -126,7 +126,8 @@
         <div class="about-content">
           <div class="texts">
             <h3>Web, Kullanıcı Deneyimi ve Frontend teknolojileri</h3>
-            <p>Tüm gün süren sıralı oturumlarla güncel frontend teknolojileri hakkında derinlemesine bilgiler edinirken sizi Rumelihisar'ının eşsiz boğaz manzarasına karşı keyifli ve eğlenceli bir gün geçirmeye davet ediyoruz..</p>
+            <p>Tüm gün süren sıralı oturumlarla güncel frontend teknolojileri hakkında derinlemesine bilgiler edinirken sizi
+              Rumelihisar'ının eşsiz boğaz manzarasına karşı keyifli ve eğlenceli bir gün geçirmeye davet ediyoruz..</p>
           </div>
           <div class="event-info">
             <h4>23 Haziran 2018</h4>
@@ -150,7 +151,8 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+              novalidate>
               <div class="form-group">
                 <input type="email" class="form-control" placeholder="eposta@adresiniz.com" name="EMAIL" id="mce-EMAIL">
                 <button class="btn btn-primary" id="mc-embedded-subscribe" name="subscribe">Gönder</button>
@@ -609,7 +611,8 @@
             <div class="promotion">
               <h3>Bizi Takip Edin</h3>
               <div class="row">
-                <p class="col-md-6 col-sm-6 col-xs-12">Sosyal medya kanallarımızdan bizi takip ederek güncel duyurulara ulaşabilir ve konferansa özel çekilişlerden haberdar olabilirsiniz.
+                <p class="col-md-6 col-sm-6 col-xs-12">Sosyal medya kanallarımızdan bizi takip ederek güncel duyurulara ulaşabilir ve konferansa özel çekilişlerden
+                  haberdar olabilirsiniz.
                 </p>
                 <ul class="social-links col-md-6 col-sm-6 col-xs-12 text-right text-center-sm">
                   <li>
@@ -732,21 +735,21 @@
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-  (function(b, o, i, l, e, r) {
-  b.GoogleAnalyticsObject = l;
-  b[l] ||
-    (b[l] = function() {
-      (b[l].q = b[l].q || []).push(arguments);
-    });
-  b[l].l = +new Date();
-  e = o.createElement(i);
-  r = o.getElementsByTagName(i)[0];
-  e.src = "https://www.google-analytics.com/analytics.js";
-  r.parentNode.insertBefore(e, r);
-})(window, document, "script", "ga");
-ga("create", "UA-XXXXX-X");
-ga("send", "pageview");
-</script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] ||
+        (b[l] = function () {
+          (b[l].q = b[l].q || []).push(arguments);
+        });
+      b[l].l = +new Date();
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = "https://www.google-analytics.com/analytics.js";
+      r.parentNode.insertBefore(e, r);
+    })(window, document, "script", "ga");
+    ga("create", "UA-XXXXX-X");
+    ga("send", "pageview");
+  </script>
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
@@ -774,30 +777,30 @@ ga("send", "pageview");
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
   <script type='text/javascript'>
-  function init_map() {
-  var myOptions = {
-    zoom: 12,
-    center: new google.maps.LatLng(39.9333635, 32.85974190000002),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var feistMarker = {
-    url: "images/icons/map.svg"
-  };
-  map = new google.maps.Map(document.getElementById("map"), myOptions);
-  marker = new google.maps.Marker({
-    map: map,
-    icon: feistMarker,
-    position: new google.maps.LatLng(39.9333635, 32.85974190000002)
-  });
-  infowindow = new google.maps.InfoWindow({
-    content: "<strong>KWORKS</strong><br>Ankara, Turkey<br>"
-  });
-  google.maps.event.addListener(marker, "click", function() {
-    infowindow.open(map, marker);
-  });
-}
-google.maps.event.addDomListener(window, "load", init_map);
-</script>
+    function init_map() {
+      var myOptions = {
+        zoom: 12,
+        center: new google.maps.LatLng(39.9333635, 32.85974190000002),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var feistMarker = {
+        url: "images/icons/map.svg"
+      };
+      map = new google.maps.Map(document.getElementById("map"), myOptions);
+      marker = new google.maps.Marker({
+        map: map,
+        icon: feistMarker,
+        position: new google.maps.LatLng(39.9333635, 32.85974190000002)
+      });
+      infowindow = new google.maps.InfoWindow({
+        content: "<strong>KWORKS</strong><br>Ankara, Turkey<br>"
+      });
+      google.maps.event.addListener(marker, "click", function () {
+        infowindow.open(map, marker);
+      });
+    }
+    google.maps.event.addDomListener(window, "load", init_map);
+  </script>
 </body>
 
 </html>
