@@ -10,3 +10,27 @@
     border-radius: 4px;
   }
 }
+
+
+#team {
+  background-color: #f9fdff;
+  text-align: center;
+  .team-item {
+    display: inline-block;
+    float: none;
+    margin: 15px 0;
+    img {
+      width: 100px;
+      background: #ffffff;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      display: block;
+      margin: auto;
+    }
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
