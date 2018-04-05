@@ -2,6 +2,7 @@
    position: relative;
    background-color: $white;
    background-size:contain;
+   text-align: center;
     @media (max-width:$break-sm){
         background-size: inherit;
         background-position: bottom;
@@ -27,4 +28,13 @@
    .sponsor-register {
      text-align: center;
    }
+   .sponsor-item {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  .section-subtitle {
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
 }
