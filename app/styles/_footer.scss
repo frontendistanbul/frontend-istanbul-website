@@ -22,11 +22,13 @@
     }
   }
   & .social-links{
-    text-align: right;
+    text-align: center;
+    margin: 15px 0 0 0;
     & li{
       margin:auto 10px;
        @media (max-width:$break-sm){
          margin-bottom: 40px;
+         text-align: right;
        }
       & img{
         width: 36px;
