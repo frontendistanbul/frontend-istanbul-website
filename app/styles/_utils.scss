@@ -33,6 +33,27 @@
   }
 }
 
+.btn-transparent {
+  font-family: $font-secondary;
+  background: transparent;
+  border: 1px solid $color-light;
+  color: $color-light;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background: $color-primary-hover;
+    border:1px solid $color-primary-hover;
+    color: $color-light;
+  }
+  &:active {
+    &:focus {
+      background: $color-primary-hover;
+      outline: none;
+    }
+  }
+}
+
 .section {
   padding: 60px 0;
 }
