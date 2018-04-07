@@ -1,7 +1,7 @@
 #subscribe {
   .form-group {
     position: relative;
-    border: solid 1px #4e3219;
+    border: solid 1px $color-primary-hover;
     border-radius: 6px;
     padding: 10px;
     margin: 55px 0 0;
@@ -11,13 +11,13 @@
       box-shadow: none;
       height: 72px;
       border-radius: 6px;
-      font-size: 24px;
+      font-size: 20px;
       padding-right: 170px;
       color: $color-secondary;
-      font-weight: bold;
+      font-weight: 500;
       font-family: $font-secondary;
-      @media (max-width:$break-xs){
-        padding-right:12px;
+      @media (max-width: $break-xs) {
+        padding-right: 12px;
         font-size: 18px;
       }
     }
@@ -46,10 +46,10 @@
       bottom: 0;
       margin: auto;
       padding: 10px 50px;
-      @media (max-width:$break-xs){
+      @media (max-width: $break-xs) {
         position: static;
-        width:100%;
-        margin-top:10px;
+        width: 100%;
+        margin-top: 10px;
       }
     }
   }

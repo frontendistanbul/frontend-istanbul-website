@@ -1,34 +1,38 @@
-#sponsors{
-   position: relative;
-   background-color: $white;
-   background-size:contain;
-   text-align: center;
-    @media (max-width:$break-sm){
-        background-size: inherit;
-        background-position: bottom;
-       }
-   & .icons{
-     margin:auto;
-     margin-top:40px;
-     max-width: 820px;
-     & .image{
-       text-align: center;
-       margin-bottom: 40px;
-       height:44px;
-       @include vertical-center;
-     }
-     & img{
-       height: 44px;
-       @media (max-width:$break-sm){
-         height:35px;
-       }
-     }
-   }
+#sponsors {
+  position: relative;
+  background-color: $white;
+  background-size: contain;
+  text-align: center;
+  @media (max-width: $break-sm) {
+    background-size: inherit;
+    background-position: bottom;
+  }
+  & .icons {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 820px;
+    & .image {
+      text-align: center;
+      margin-bottom: 40px;
+      height: 44px;
+      @include vertical-center;
+    }
+    & img {
+      height: 44px;
+      @media (max-width: $break-sm) {
+        height: 35px;
+      }
+    }
+  }
 
-   .sponsor-register {
-     text-align: center;
-   }
-   .sponsor-item {
+  .sponsor-register {
+    margin-top: 20px;
+    text-align: center;
+    svg {
+      margin-right: 5px;
+    }
+  }
+  .sponsor-item {
     display: inline-block;
     margin: 0 20px;
   }

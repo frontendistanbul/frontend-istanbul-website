@@ -194,7 +194,7 @@
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="promotion">
-              <h3>Hemen Kayıt Olun</h3>
+              <h3>Abone Olun</h3>
               <p>
                 Konferansla ilgili güncel gelişmelerden haberdar olmak için mail listemize kayıt olabilirsiniz.
               </p>
@@ -216,7 +216,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Konuşmacı Çağrısı</h2>
-          <p>Konferans konuşmacısı olmak için tek yapmanız gereken aşağıdaki butona tıklayarak formu doldurmak.</p>
+          <p>Etkinlikte konuşmacı olmak istiyorsanız, formu doldurup başvuru gönderebilirsiniz. </p>
         </div>
         <div class="row">
           <div class="speakers">
@@ -723,41 +723,43 @@
           <div class="col-md-12 section-subtitle">
             <h3>Ana Sponsor</h3>
             <a href="https://bionluk.com" target="_blank" class="sponsor-item">
-              <img src="images/sponsors/bionluk.png" alt="Ana sponsor bionluk" style="max-width: 300px;">
+              <img src="images/sponsors/bionluk.png" alt="Ana sponsor bionluk" style="max-width: 180px;">
             </a>
           </div>
 
           <div class="col-md-12 section-subtitle">
             <h3>Platin</h3>
             <a href="https://segmentify.com" target="_blank" class="sponsor-item">
-              <img src="images/sponsors/segmentify.png" alt="Ana sponsor bionluk" style="max-width: 250px;">
+              <img src="images/sponsors/segmentify.png" alt="Ana sponsor bionluk" style="max-width: 150px;">
             </a>
           </div>
 
           <div class="col-md-12 section-subtitle">
             <h3>Altın</h3>
             <a href="https://vngrs.com" target="_blank" class="sponsor-item">
-              <img src="images/sponsors/vngrs.png" alt="Ana sponsor VNGRS" style="max-width: 220px;">
+              <img src="images/sponsors/vngrs.png" alt="Ana sponsor VNGRS" style="max-width: 140px;">
             </a>
           </div>
 
           <div class="col-md-12 section-subtitle">
             <h3>Gümüş</h3>
             <a href="https://houseofapps.com" target="_blank" class="sponsor-item">
-              <img src="images/sponsors/house-of-apps.png" alt="Ana sponsor bionluk" style="max-width: 160px;">
+              <img src="images/sponsors/house-of-apps.png" alt="Ana sponsor bionluk" style="max-width: 100px;">
             </a>
           </div>
 
-          <div class="col-md-12 section-subtitle">
+          <!-- <div class="col-md-12 section-subtitle">
             <h3>Bronz</h3>
-          </div>
+          </div> -->
 
-          <div class="col-md-12 section-subtitle">
+          <!-- <div class="col-md-12 section-subtitle">
             <h3>Topluluk Sponsorları</h3>
-          </div>
-
+          </div> -->
+        </div>
+        <div class="row">
           <div class="sponsor-register">
-            <a href="#" class="btn btn-primary">Sponsor Ol</a>
+            <a href="#" class="btn btn-primary">
+              <i class="far fa-file-alt"></i> Sponsor Ol</a>
           </div>
         </div>
       </div>
@@ -767,8 +769,6 @@
       <div class="container">
         <div class="section-title">
           <h2>Etkinlik Ekibi</h2>
-          <p>Onlar olmasa yapamazdık ♥
-          </p>
         </div>
         <div class="row">
           <div class="col-lg-2 team-item">
@@ -890,8 +890,8 @@
   <script type='text/javascript'>
     function init_map() {
       var myOptions = {
-        zoom: 12,
-        center: new google.maps.LatLng(39.9333635, 32.85974190000002),
+        zoom: 14,
+        center: new google.maps.LatLng(41.084700, 29.051029),
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var feistMarker = {
@@ -901,7 +901,7 @@
       marker = new google.maps.Marker({
         map: map,
         icon: feistMarker,
-        position: new google.maps.LatLng(39.9333635, 32.85974190000002)
+        position: new google.maps.LatLng(41.084700, 29.051029)
       });
       infowindow = new google.maps.InfoWindow({
         content: "<strong>KWORKS</strong><br>Ankara, Turkey<br>"
