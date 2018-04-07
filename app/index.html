@@ -870,7 +870,7 @@
     function init_map() {
       var myOptions = {
         zoom: 14,
-        center: new google.maps.LatLng(41.084700, 29.051029),
+        center: new google.maps.LatLng(41.0850399, 29.0430874),
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var feistMarker = {
@@ -880,10 +880,10 @@
       marker = new google.maps.Marker({
         map: map,
         icon: feistMarker,
-        position: new google.maps.LatLng(41.084700, 29.051029)
+        position: new google.maps.LatLng(41.0850399, 29.0430874)
       });
       infowindow = new google.maps.InfoWindow({
-        content: "<strong>KWORKS</strong><br>Ankara, Turkey<br>"
+        content: "<strong>Boğaziçi Üniversitesi</strong><br>İstanbul, Türkiye<br>"
       });
       google.maps.event.addListener(marker, "click", function () {
         infowindow.open(map, marker);
