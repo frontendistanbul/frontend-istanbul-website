@@ -1,29 +1,52 @@
 #about {
-  background: url(../images/backgrounds/about.svg);
-  background-position: center bottom;
+  background: url(../images/backgrounds/bogazici-1.jpg);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  .about-content {
-    text-align: center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  .bg {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
-    h3 {
-      font-size: 38px;
-      font-weight: 300;
-      line-height: 1;
-      margin-bottom: 30px;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-title {
+    h2 {
+      color: $color-primary;
+      margin: 0 0 50px;
     }
+  }
 
+  .about-content {
+    margin-top: 40px;
     p {
       font-size: 16px;
-      line-height: 1.44;
-      color: $color-dark;
+      color: #ddd;
+      line-height: 1.81;
+      font-weight: 500;
+
+      a {
+        color: #fff;
+        font-weight: 700;
+      }
     }
   }
 
   .event-info {
     margin-top: 20px;
+
     h4 {
-      color: $color-primary;
       font-size: 46px;
       font-weight: bold;
       margin: 0;
@@ -35,7 +58,6 @@
       font-size: 24px;
       font-weight: 600;
       line-height: 1.17;
-      color: #3c2513;
     }
   }
   .register {

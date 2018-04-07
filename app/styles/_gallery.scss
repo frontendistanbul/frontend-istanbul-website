@@ -1,16 +1,15 @@
 #gallery {
   background-color: $color-light;
-  & .gallery-images{
+  & .gallery-images {
     margin-top: 42px;
   }
-   & img {
-	  display: inline-block;
-	  width: 100%;
+  & img {
+    display: inline-block;
+    width: 100%;
     margin-bottom: 1.6em;
     border-radius: 4px;
   }
 }
-
 
 #team {
   background-color: #f9fdff;
@@ -24,12 +23,12 @@
       background: #ffffff;
       border-radius: 50%;
       border: 5px solid #fff;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
       display: block;
-      margin: auto;
+      margin: 10px auto;
     }
     .name {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 16px;
     }
   }
