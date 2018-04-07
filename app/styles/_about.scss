@@ -1,5 +1,5 @@
 #about {
-  background: url(../images/backgrounds/bogazici-1.jpg);
+  background: url(../images/backgrounds/bau-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,6 +30,7 @@
 
   .about-content {
     margin-top: 40px;
+    text-align: left;
     p {
       font-size: 16px;
       color: #ddd;
@@ -40,6 +41,10 @@
         color: #fff;
         font-weight: 700;
       }
+    }
+
+    strong {
+      color: $color-light;
     }
   }
 
