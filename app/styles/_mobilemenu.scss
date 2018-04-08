@@ -9,7 +9,7 @@
   .line-2,
   .line-3 {
     transition: 0.2s all cubic-bezier(0.63, 0.62, 0.48, 1.64);
-    background-color: #fff;
+    background-color: #bdbdbd;
     height: 3px;
     margin-bottom: 7px;
     width: 30px;
@@ -39,13 +39,13 @@
     transform: rotate(45deg) translateY(-1px);
     transform-origin: left top;
     -webkit-transform-origin: left top;
-    background: #fff;
+    background: #bdbdbd;
   }
   .line-3 {
     transform: translateY(1px);
     transform: rotate(-45deg) translateY(-1px);
     transform-origin: left bottom;
-    background: #fff;
+    background: #bdbdbd;
   }
   .line-2 {
     opacity: 0;
@@ -57,13 +57,13 @@
     transform: translateY(-2px);
     transform: rotate(45deg) translateY(-1px);
     transform-origin: left top;
-    background: #fff;
+    background: #bdbdbd;
   }
   .line-3 {
     transform: translateY(1px);
     transform: rotate(-45deg) translateY(-1px);
     transform-origin: left bottom;
-    background: #fff;
+    background: #bdbdbd;
   }
   .line-2 {
     opacity: 0;
