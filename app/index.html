@@ -16,7 +16,6 @@
 
   <link rel="stylesheet" href="styles/main.css">
 
-  <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBAf1dsOmhK18vZOom5kUm6Cz6Cz_nnL6w&v=3.exp'></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
     crossorigin="anonymous"></script>
@@ -71,7 +70,7 @@
         <div class="intro-content">
           <div class="slogan">
             <a class="logo" href="javascript:;" title="Frontend İstanbul">
-              <img src="images/fristlogo.svg" alt="Frontend istanbul">
+              <img src="images/logo.svg" alt="Frontend istanbul">
             </a>
             <h5>23 Haziran 2018, İstanbul/Türkiye</h5>
             <h1>Frontend Teknolojileri Konferansı</h1>
@@ -956,7 +955,7 @@
           <div class="col-md-6 col-sm-4 col-xs-12">
             <div class="image">
               <a href="#intro">
-                <img src="images/fristlogo.svg" alt="Frontend Istanbul Logo">
+                <img src="images/logo.svg" alt="Frontend Istanbul Logo">
               </a>
             </div>
           </div>
@@ -981,23 +980,17 @@
   </footer>
   </div>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117170804-1"></script>
   <script>
-    (function (b, o, i, l, e, r) {
-      b.GoogleAnalyticsObject = l;
-      b[l] ||
-        (b[l] = function () {
-          (b[l].q = b[l].q || []).push(arguments);
-        });
-      b[l].l = +new Date();
-      e = o.createElement(i);
-      r = o.getElementsByTagName(i)[0];
-      e.src = "https://www.google-analytics.com/analytics.js";
-      r.parentNode.insertBefore(e, r);
-    })(window, document, "script", "ga");
-    ga("create", "UA-XXXXX-X");
-    ga("send", "pageview");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117170804-1');
   </script>
+
 
   <!-- build:js scripts/vendor.js -->
   <!-- bower:js -->
