@@ -1,15 +1,19 @@
 var screenHeight = $(window).height();
 
 $(function() {
-  $('#nav-button').click(function() {
+  $('#nav-button').click(function(e) {
     var _this = $(this);
+    var body = $('body');
     _this.toggleClass('active');
     $('#overlay').toggleClass('open');
+    body.toggleClass('modal-open');
   });
 
   $('.nav a[href*="#"]:not([href="#"])').click(function() {
     $('#overlay').toggleClass('open');
     $('.navbar-toggle').toggleClass('active');
+    var body = $('body');
+    body.toggleClass('modal-open');
     if (
       location.pathname.replace(/^\//, '') ==
         this.pathname.replace(/^\//, '') &&

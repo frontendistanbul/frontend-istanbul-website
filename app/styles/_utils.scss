@@ -3,7 +3,7 @@
   transition: all 0.2s ease;
   border-radius: 3px;
   font-size: 18px;
-  padding: 21px 50px;
+  padding: 19px 40px;
   text-align: center;
   margin: 0 auto;
   font-weight: bold;
@@ -11,6 +11,9 @@
   @include transition();
   &:focus {
     outline: none;
+  }
+  @media (max-width: $break-xs) {
+    padding: 12px 30px;
   }
 }
 
@@ -43,7 +46,7 @@
   &:active,
   &:hover {
     background: $color-primary-hover;
-    border:1px solid $color-primary-hover;
+    border: 1px solid $color-primary-hover;
     color: $color-light;
   }
   &:active {

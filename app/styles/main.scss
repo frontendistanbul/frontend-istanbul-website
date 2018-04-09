@@ -9,10 +9,10 @@ $color-primary: #2196f3;
 $color-primary-hover: #1d84d6;
 $color-secondary: #000;
 $color-dark: #4a4a4a;
-$color-light: #f9fdff;
+$color-light: #f7fdfc;
 $color-coffee: #50e3c2;
 $white: #ffffff;
-$color-eat: #F8BA00;
+$color-eat: #f8ba00;
 
 $font-primary: "Open Sans", sans-serif;
 $font-secondary: "Titillium Web", sans-serif;
@@ -50,6 +50,11 @@ body {
   font-family: $font-primary;
   font-size: 16px;
   color: $color-secondary;
+  &.modal-open {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .nav > li > a:hover,
