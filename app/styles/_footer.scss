@@ -22,8 +22,11 @@
     }
   }
   & .social-links{
-    text-align: center;
+    text-align: right;
     margin: 15px 0 0 0;
+    @media (max-width:$break-sm){
+      text-align: center;
+    }
     & li{
       margin:auto 10px;
        @media (max-width:$break-sm){
