@@ -24,18 +24,22 @@
 
     ::-webkit-input-placeholder {
       color: $color-secondary;
+      opacity: 0.5;
     }
 
     ::-moz-placeholder {
       color: $color-secondary;
+      opacity: 0.5;
     }
 
     :-ms-input-placeholder {
       color: $color-secondary;
+      opacity: 0.5;
     }
 
     :-moz-placeholder {
       color: $color-secondary;
+      opacity: 0.5;
     }
 
     button {
