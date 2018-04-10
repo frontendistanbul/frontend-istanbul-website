@@ -82,7 +82,7 @@ $("#subscribe-form").submit(function (event) {
       // if the request failed or succeeded
       request.always(function () {
           // Reenable the inputs
-        $("#emailHelp").html("Tebrikler! E-posta adresinizi kaydedildi.").fadeIn();
+        $("#emailHelp").html("E-posta adresiniz kaydedildi.").fadeIn();
         
         $inputs.prop("disabled", false);
         
