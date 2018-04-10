@@ -51,7 +51,7 @@ body {
   font-size: 16px;
   color: $color-secondary;
   &.modal-open {
-    position: fixed;
+    // position: fixed;
     overflow: hidden;
     width: 100%;
   }
