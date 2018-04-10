@@ -1,66 +1,73 @@
 #transportation {
-  background: url('../images/ulasim/bg.svg') no-repeat top center fixed;
+  background: url("../images/ulasim/bg.svg") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top:90px;
-  padding-bottom:90px;
-  
-  #ulasim-white-layout{
-    background: #F6F8FE url('../images/ulasim/bus_full.svg') no-repeat;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  @media (max-width: $break-xs) {
+    background: none;
+  }
+
+  #ulasim-white-layout {
+    background: #f6f8fe url("../images/ulasim/bus_full.svg") no-repeat;
     background-position: 500px 54px;
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.20);
-    .section-title{
-      padding-top:18px;
-      h2{
-        color:#C2C2C2;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+    .section-title {
+      padding-top: 18px;
+      h2 {
+        color: #c2c2c2;
         font-size: 46px;
         display: block;
+        @media (max-width: $break-xs) {
+          font-size: 30px;
+          color: #000;
+        }
       }
-      p{
+      p {
         font-size: 14px;
       }
       a:link,
-      a:visited{
+      a:visited {
         display: inline-block;
-        background-image: linear-gradient(-129deg, #5A84FF 13%, #1ACBFE 100%);
-        box-shadow: 0 2px 14px 0 rgba(0,0,0,0.26);
+        background-image: linear-gradient(-129deg, #5a84ff 13%, #1acbfe 100%);
+        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.26);
         font-size: 14px;
-        color: #FFFFFF;
+        color: #ffffff;
         letter-spacing: -0.33px;
-        padding:10px 20px;
+        padding: 10px 20px;
         font-weight: 700;
       }
 
-      a:hover{
-        background-image: linear-gradient(-129deg, #845AFF 19%, #E31AFE 100%);
-        box-shadow: 0 2px 14px 0 rgba(0,0,0,0.26);
+      a:hover {
+        background-image: linear-gradient(-129deg, #845aff 19%, #e31afe 100%);
+        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.26);
         text-decoration: none;
       }
     }
   }
   .options {
-    h3{
+    h3 {
       font-size: 24px;
       color: #828282;
       letter-spacing: -0.57px;
-      margin-top:0px;
+      margin-top: 0px;
     }
-    ul{
+    ul {
       list-style-type: none;
-      padding-left:0px;
+      padding-left: 0px;
     }
 
-    ul:last-child{
-      padding-bottom:40px;
+    ul:last-child {
+      padding-bottom: 40px;
     }
     ul > li {
       color: #494646;
       font-size: 14px;
       letter-spacing: -0.57px;
       line-height: 27px;
-      margin-top:0px;
+      margin-top: 0px;
     }
   }
 }
