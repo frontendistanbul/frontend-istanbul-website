@@ -85,7 +85,6 @@ $("#subscribe-form").submit(function (event) {
         $("#emailHelp").html("Tebrikler! E-posta adresinizi kaydedildi.").fadeIn();
         
         $inputs.prop("disabled", false);
-        console.log("DONE");
         
         setTimeout( function() {
           $("#emailHelp").fadeOut();
