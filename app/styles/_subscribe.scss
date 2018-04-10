@@ -1,10 +1,22 @@
 #subscribe {
+  
+  #subscribe-form.error{
+    .form-group{
+      border-color: red;
+    }
+    #emailHelp{
+      color: red;
+      display: block;
+      font-size: 14px;
+    }
+  }
   .form-group {
     position: relative;
     border: solid 1px $color-primary-hover;
     border-radius: 6px;
     padding: 10px;
     margin: 55px 0 0;
+
 
     .form-control {
       border: 0;
@@ -20,6 +32,14 @@
         padding-right: 12px;
         font-size: 18px;
       }
+    }
+    
+    .form-text{
+      font-weight: 600;
+      font-size: 18px;
+      color: #0ac32d;
+      position: absolute;
+      margin-top: 4px;
     }
 
     ::-webkit-input-placeholder {
@@ -56,5 +76,13 @@
         margin-top: 10px;
       }
     }
+  }
+  #emailHelp{
+    font-weight: 600;
+    font-size: 18px;
+    color: #0ac32d;
+    position: absolute;
+    margin-top: 4px;
+    display: none;
   }
 }
