@@ -53,21 +53,11 @@ $(window).on('scroll', function() {
 var request;
 
 // Bind to the submit event of our form
-var sEmail = $("#subscribe-form #email").val();
-
-$("#subscribe-form #email").on("blur", function () {  
-  sEmail = $("#subscribe-form #email").val();
-  if (validateEmail(sEmail)) {
-    $("#subscribe-form").removeClass("error");
-   } else {
-    $("#subscribe-form").addClass("error");   
-    $("#emailHelp").html("Lütfen geçerli bir e-posta adresi yazınız.");
-   }
-})
-
 
 $("#subscribe-form").submit(function (event) {
+  var sEmail = $("#subscribe-form #email").val();
   // Prevent default posting of form
+  $("#subscribe-form").removeClass("error");   
   event.preventDefault();
   if (validateEmail(sEmail)) {
       if (request) {
@@ -92,11 +82,22 @@ $("#subscribe-form").submit(function (event) {
       // if the request failed or succeeded
       request.always(function () {
           // Reenable the inputs
-        $("#emailHelp").html("Tebrikler! E-posta adresinizi kaydedildi.").fadeIn();
+        $("#emailHelp").html("E-posta adresiniz kaydedildi.").fadeIn();
+        
+        $inputs.prop("disabled", false);
+        
+        setTimeout( function() {
+          $("#emailHelp").fadeOut();
+        }, 3000);
           
       });
-  } 
+  } else {
+    $("#subscribe-form").addClass("error");   
+    $("#emailHelp").html("Lütfen geçerli bir e-posta adresi yazınız.");
+  }
 });
+
+
 
 
 function validateEmail(sEmail) {
