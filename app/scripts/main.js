@@ -1,21 +1,27 @@
-var screenHeight = $(window).height();
+var $screenHeight = $(window).height();
+var $subscribeForm = $("#subscribe-form");
+var $emailHelp = $("#emailHelp")
+var $body = $('body');
+
+// Variable to hold request
+var request;
 
 $(function() {
-  $('#nav-button').click(function(e) {
-    var _this = $(this);
-    var body = $('body');
-    _this.toggleClass('active');
+  $('#nav-button').on('click', function(e) {
+    var $this = $(this);
+    
+    $this.toggleClass('active');
     $('#overlay').toggleClass('open');
-    body.toggleClass('modal-open');
+    $body.toggleClass('modal-open');
   });
 
-  $('.nav a[href*="#"]:not([href="#"])').click(function() {
+  $('.nav a[href*="#"]:not([href="#"])').on('click', function() {
     $('#overlay').toggleClass('open');
     $('.navbar-toggle').toggleClass('active');
-    var body = $('body');
-    body.toggleClass('modal-open');
+    
+    $body.toggleClass('modal-open');
     if (
-      location.pathname.replace(/^\//, '') ==
+      location.pathname.replace(/^\//, '') ===
         this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
@@ -37,28 +43,23 @@ $(function() {
 });
 
 $(window).on('scroll', function() {
-  var scTop = $(window).scrollTop();
+  var $scTop = $(window).scrollTop();
+  var $navBar = $('.navbar')
 
-  if (scTop > screenHeight) {
-    $('.navbar').addClass('with-bg');
-  } else {
-    $('.navbar').removeClass('with-bg');
-  }
+  return $scTop > $screenHeight
+    ? $navBar.addClass('with-bg')
+    : $navBar.removeClass('with-bg');
 });
-
-
-
-
-// Variable to hold request
-var request;
 
 // Bind to the submit event of our form
 
-$("#subscribe-form").submit(function (event) {
-  var sEmail = $("#subscribe-form #email").val();
-  // Prevent default posting of form
-  $("#subscribe-form").removeClass("error");   
+$subscribeForm.on('submit', function (event) {
   event.preventDefault();
+
+  var sEmail = $("#subscribe-form #email").val();
+  
+  $subscribeForm.removeClass("error");
+  
   if (validateEmail(sEmail)) {
       if (request) {
           request.abort();
@@ -74,7 +75,7 @@ $("#subscribe-form").submit(function (event) {
       });
       // Callback handler that will be called on failure
       request.fail(function (jqXHR, textStatus, errorThrown) {
-        $("#emailHelp").html("Lütfen geçerli bir e-posta adresi yazınız.").fadeIn();
+        $emailHelp.html("Lütfen geçerli bir e-posta adresi yazınız.").fadeIn();
         
        });
 
@@ -82,18 +83,18 @@ $("#subscribe-form").submit(function (event) {
       // if the request failed or succeeded
       request.always(function () {
           // Reenable the inputs
-        $("#emailHelp").html("E-posta adresiniz kaydedildi.").fadeIn();
+        $emailHelp.html("E-posta adresiniz kaydedildi.").fadeIn();
         
         $inputs.prop("disabled", false);
         
         setTimeout( function() {
-          $("#emailHelp").fadeOut();
+          $emailHelp.fadeOut();
         }, 3000);
           
       });
   } else {
-    $("#subscribe-form").addClass("error");   
-    $("#emailHelp").html("Lütfen geçerli bir e-posta adresi yazınız.");
+    $subscribeForm.addClass("error");
+    $emailHelp.html("Lütfen geçerli bir e-posta adresi yazınız.");
   }
 });
 
@@ -102,10 +103,6 @@ $("#subscribe-form").submit(function (event) {
 
 function validateEmail(sEmail) {
   var filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (filter.test(sEmail)) {
-      return true;      
-  }
-  else {
-      return false;
-  }
+ 
+  return filter.test(sEmail) ? true : false
 }
