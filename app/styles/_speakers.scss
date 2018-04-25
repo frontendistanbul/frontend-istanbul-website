@@ -4,7 +4,7 @@
   }
   .speaker {
     margin-bottom: 30px;
-    position: relative; 
+    position: relative;
     .image {
       img {
         max-width: 100%;
@@ -26,7 +26,7 @@
         color: $color-primary;
         font-family: $font-secondary;
         span {
-          font-style: italic;
+          font-style: normal;
         }
       }
       .social-links {
@@ -40,11 +40,12 @@
 }
 .border{
   position: absolute;
+  z-index: -1;
   right:0;
   bottom:0px;
   width: 200px;
   height: 170px;
   border: 1px solid $color-primary;
-  border-color: transparent $color-coffee $color-coffee transparent;
+  border-color: transparent $color-primary $color-primary transparent;
   border-radius: 0 0 6px 0;
 }

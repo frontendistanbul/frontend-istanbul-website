@@ -1,3 +1,44 @@
 #tickets {
-  background-color: #fff;
+  background: url("../images/ulasim/bg.svg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (max-width: $break-xs) {
+    background: none;
+  }
+
+  .section-title {
+    h2 {
+      color: #fff;
+      font-size: 46px;
+      display: block;
+      @media (max-width: $break-xs) {
+        font-size: 30px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: #fff;
+    }
+    a:link,
+    a:visited {
+      display: inline-block;
+      background-image: linear-gradient(-129deg, #5a84ff 13%, #1acbfe 100%);
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.26);
+      font-size: 14px;
+      color: #ffffff;
+      letter-spacing: -0.33px;
+      padding: 10px 20px;
+      font-weight: 700;
+    }
+
+    a:hover {
+      background-image: linear-gradient(-129deg, #845aff 19%, #e31afe 100%);
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.26);
+      text-decoration: none;
+    }
+  }
 }
