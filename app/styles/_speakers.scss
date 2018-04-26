@@ -1,51 +1,73 @@
-#speakers {
-  .speakers {
-    margin-top: 50px;
-  }
-  .speaker {
-    margin-bottom: 30px;
-    position: relative;
-    .image {
-      img {
-        max-width: 100%;
-        border-radius: 6px;
-      }
-    }
-
-    .header {
-      padding: 15px 0;
-      h4 {
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 1.17;
-        margin: 0 0 5px;
-      }
-
-      span {
-        font-size: 18px;
-        color: $color-primary;
-        font-family: $font-secondary;
-        span {
-          font-style: normal;
+#speakers-section{
+  background: url("../images/backgrounds/konusmacilar.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  #speakers {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding:50px 0px;
+    .speaker-item {
+      background: #FFFFFF;
+      width: 300px;
+      box-shadow: 0 2px 20px 0 rgba(0,0,0,0.09);
+      border-radius: 12px;
+      color: white;
+      margin:80px 20px;
+      padding-bottom:25px;
+      .speaker-img-container{
+        position: absolute;
+        margin-top:-100px;
+        width: 300px;
+        .speaker-img{
+          max-width: 80%;
+          left:10%;
+          position: absolute;
+          top:40px;
+          border-radius: 50%;
+          box-shadow: 0 2px 30px 0 rgba(0,0,0,0.50);
         }
       }
-      .social-links {
-        margin-top: 8px;
+      .speaker-name{
+        padding:0px 20px;
+        display: block;
+        font-size: 18px;
+        color:#ACABAB;
+        margin-top:225px;
+        font-weight: 600;
+      }
+      .speaker-subject{
+        padding:0px 20px;
+        font-size: 22px;
+        color: #3B3838;
+        line-height: 25px;
+        font-family: $font-secondary;
+        font-weight: 700;
+      }
+      .speaker-title{
+        padding:0px 20px;
+        font-size: 14px;
+        color: #ACABAB;
+      }
+      
+      .socials{
+        list-style-type: none;
+        padding:0px 20px;
+        margin-top:10px;
+        li:first-child{
+          margin-left: 0px!important;
+        }
+        li{
+          margin-left:5px;
+          float: left;
+        }
+        
       }
     }
-    .about {
-      padding: 20px 10px 15px 0;
-    }
   }
-}
-.border{
-  position: absolute;
-  z-index: -1;
-  right:0;
-  bottom:0px;
-  width: 200px;
-  height: 170px;
-  border: 1px solid $color-primary;
-  border-color: transparent $color-primary $color-primary transparent;
-  border-radius: 0 0 6px 0;
 }

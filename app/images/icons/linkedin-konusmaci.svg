@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.398966%" y1="25.9912853%" x2="111.248784%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5A84FF" offset="0%"></stop>
+            <stop stop-color="#1ACBFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="konuşmacı" transform="translate(-909.000000, -680.000000)">
+            <g id="konuşmacı-copy-2" transform="translate(889.000000, 206.000000)">
+                <g id="linkedin" transform="translate(20.000000, 474.000000)">
+                    <circle id="Oval-2" fill="url(#linearGradient-1)" cx="24" cy="24" r="24"></circle>
+                    <g id="linkedin-logo" transform="translate(13.000000, 12.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M23,13.4881825 L23,22 L18.0703553,22 L18.0703553,14.0582528 C18.0703553,12.0632211 17.3573353,10.70169 15.5729674,10.70169 C14.2108287,10.70169 13.400219,11.6192622 13.0436021,12.5068588 C12.9135538,12.8241712 12.8800791,13.2658284 12.8800791,13.7100014 L12.8800791,22 L7.94877673,22 C7.94877673,22 8.01519122,8.54928686 7.94877673,7.15569267 L12.8795979,7.15569267 L12.8795979,9.25981382 C12.8695983,9.27555097 12.8566041,9.29251926 12.8471927,9.30777466 L12.8795979,9.30777466 L12.8795979,9.25981382 C13.5347057,8.24979927 14.7046594,6.80695958 17.3233795,6.80695958 C20.5677967,6.80690605 23,8.92858429 23,13.4881825 Z M2.79042447,0 C1.10343232,0 0,1.10764911 0,2.56424543 C0,3.98909981 1.07150845,5.13036433 2.72497251,5.13036433 L2.75791238,5.13036433 C4.47757703,5.13036433 5.54705348,3.98931392 5.54705348,2.56424543 C5.51464834,1.10764911 4.47757703,0 2.79042447,0 Z M0.292876124,22 L5.22230695,22 L5.22230695,7.15569267 L0.292876124,7.15569267 L0.292876124,22 Z" id="LinkedIn"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

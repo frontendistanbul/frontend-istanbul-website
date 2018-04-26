@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="301px" height="310px" viewBox="0 0 301 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.398966%" y1="25.9912853%" x2="111.248784%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#5A84FF" offset="0%"></stop>
+            <stop stop-color="#1ACBFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="konuşmacı" transform="translate(-570.000000, -206.000000)" fill="url(#linearGradient-1)">
+            <g id="konuşmacı-copy" transform="translate(570.000000, 206.000000)">
+                <path d="M259.077271,269.082299 C293.14106,157.965323 326.322589,100.553799 272.947849,65.9187171 C219.573109,31.2836353 62.4263669,-63.2783403 12.9601797,65.9187171 C-7.38082821,119.045884 -5.51515208,201.248178 41.8758903,248.79374 C109.732538,316.871635 239.020865,334.506825 259.077271,269.082299 Z" id="Oval"></path>
+            </g>
+        </g>
+    </g>
+</svg>
