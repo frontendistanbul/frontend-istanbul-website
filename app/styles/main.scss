@@ -62,10 +62,10 @@ body {
   background: transparent;
 }
 
-.callToAction-btn:link,
-.callToAction-btn:visited {
+.btn-primary:link,
+.btn-primary:visited {
   display: inline-block;
-  background-image: linear-gradient(-129deg, #5a84ff 13%, #1acbfe 100%);
+  background-image: linear-gradient(-129deg, #5a84ff 13%, #1acbfe 100%)!important;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.26);
   color: #ffffff;
   letter-spacing: -0.33px;
@@ -73,8 +73,8 @@ body {
   font-weight: 700;
 }
 
-.callToAction-btn:hover {
-  background-image: linear-gradient(-129deg, #845aff 19%, #e31afe 100%);
+.btn-primary:hover {
+  background-image: linear-gradient(-129deg, #845aff 19%, #e31afe 100%)!important;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.26);
   text-decoration: none;
 }
