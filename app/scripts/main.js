@@ -1,6 +1,6 @@
 var $screenHeight = $(window).height();
-var $subscribeForm = $("#subscribe-form");
-var $emailHelp = $("#emailHelp")
+var $subscribeForm = $('#subscribe-form');
+var $emailHelp = $('#emailHelp')
 var $body = $('body');
 
 // Variable to hold request
@@ -56,26 +56,26 @@ $(window).on('scroll', function() {
 $subscribeForm.on('submit', function (event) {
   event.preventDefault();
 
-  var sEmail = $("#subscribe-form #email").val();
+  var sEmail = $('#subscribe-form #email').val();
   
-  $subscribeForm.removeClass("error");
+  $subscribeForm.removeClass('error');
   
   if (validateEmail(sEmail)) {
       if (request) {
           request.abort();
       }
       var $form = $(this);
-      var $inputs = $form.find("input, select, button, textarea");
+      var $inputs = $form.find('input, select, button, textarea');
       var serializedData = $form.serialize();
-      $inputs.prop("disabled", true);
+      $inputs.prop('disabled', true);
       request = $.ajax({
-          url: "https://script.google.com/macros/s/AKfycbygwqbbiSDvikTDGlf3u8GHhPVHXuCnwhdFuL_Wrl3wBOmfjME/exec",
-          type: "post",
+          url: 'https://script.google.com/macros/s/AKfycbygwqbbiSDvikTDGlf3u8GHhPVHXuCnwhdFuL_Wrl3wBOmfjME/exec',
+          type: 'post',
           data: serializedData
       });
       // Callback handler that will be called on failure
       request.fail(function (jqXHR, textStatus, errorThrown) {
-        $emailHelp.html("Lütfen geçerli bir e-posta adresi yazınız.").fadeIn();
+        $emailHelp.html('Lütfen geçerli bir e-posta adresi yazınız.').fadeIn();
         
        });
 
@@ -83,9 +83,9 @@ $subscribeForm.on('submit', function (event) {
       // if the request failed or succeeded
       request.always(function () {
           // Reenable the inputs
-        $emailHelp.html("E-posta adresiniz kaydedildi.").fadeIn();
+        $emailHelp.html('E-posta adresiniz kaydedildi.').fadeIn();
         
-        $inputs.prop("disabled", false);
+        $inputs.prop('disabled', false);
         
         setTimeout( function() {
           $emailHelp.fadeOut();
@@ -93,8 +93,8 @@ $subscribeForm.on('submit', function (event) {
           
       });
   } else {
-    $subscribeForm.addClass("error");
-    $emailHelp.html("Lütfen geçerli bir e-posta adresi yazınız.");
+    $subscribeForm.addClass('error');
+    $emailHelp.html('Lütfen geçerli bir e-posta adresi yazınız.');
   }
 });
 
