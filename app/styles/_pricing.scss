@@ -1,0 +1,72 @@
+#pricing-section{
+  background: url("../images/backgrounds/konusmacilar.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  #pricing {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .pricing-item {
+      background: #FFFFFF;
+      width: 300px;
+      box-shadow: 0 2px 20px 0 rgba(0,0,0,0.09);
+      border-radius: 12px;
+      margin:80px 20px;
+      padding-bottom:25px;
+      height: 510px;
+      position: relative;
+      .pricing-title{
+        font-family: $font-secondary;
+        display: block;
+        font-size: 44px;
+        color:#5A84FF;
+        text-align: center;
+        font-weight: 700;
+        margin-top:40px;
+      }
+      .price{
+          text-align: center;
+          font-family: $font-secondary;
+          font-size: 48px;
+          line-height: 52px;
+          margin-top:20px;
+      }
+      .price-without-desc{
+        text-align: center;
+        font-family: $font-secondary;
+        font-size: 48px;
+        line-height: 52px;
+        margin-top:40px;
+      }
+      .pricing-desc{
+          font-size: 14px;
+          line-height: 25px; 
+          font-size: 18px; 
+          text-align: center; 
+          color: #CCCBCB;
+      } 
+      .benefits{
+        list-style-type: none;
+        padding-left:0px;
+        li {
+            padding:0px 30px;
+            font-size: 14px;
+            text-align: center;
+            color: #3B3838;
+            margin-top:27px;
+        }
+      }
+      .btn{
+          position: absolute;
+          text-align: center;
+          margin-left:73px;
+          bottom:45px;
+      }
+    }
+  }
+}
