@@ -11,6 +11,14 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    .disabled-item {
+      opacity: 0.5;
+      cursor: default;
+
+      .btn {
+        pointer-events: none;
+      }
+    }
     .pricing-item {
       background: #FFFFFF;
       width: 300px;
@@ -45,11 +53,11 @@
       }
       .pricing-desc{
           font-size: 14px;
-          line-height: 25px; 
-          font-size: 18px; 
-          text-align: center; 
+          line-height: 25px;
+          font-size: 18px;
+          text-align: center;
           color: #CCCBCB;
-      } 
+      }
       .benefits{
         list-style-type: none;
         padding-left:0px;
@@ -58,7 +66,7 @@
             font-size: 14px;
             text-align: center;
             color: #3B3838;
-            margin-top:27px;
+            margin-top:17px;
         }
       }
       .btn{
