@@ -46,12 +46,14 @@
         font-size: 22px;
         color: #3B3838;
         line-height: 25px;
+        min-height: 120px;
         font-family: $font-secondary;
         font-weight: 700;
       }
       .speaker-title{
         padding:0px 20px;
         font-size: 14px;
+        min-height: 50px;
         color: #ACABAB;
       }
 
