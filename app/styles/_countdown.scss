@@ -1,0 +1,66 @@
+$countdown-item-count: 4;
+$countdown-item-width: 100px;
+$countdown-item-width-xs: 64px;
+$countdown-item-margin: 5px;
+$countdown-item-margin-xs: 3px;
+$countdown-item-border-radius: 4px;
+
+.countdown {
+  display: none;
+  list-style: none;
+  width: (($countdown-item-width + $countdown-item-margin * 2) * $countdown-item-count);
+  margin: 0 auto;
+  padding: 0;
+
+  @media (max-width: $break-xs) {
+    width: (($countdown-item-width-xs + $countdown-item-margin-xs * 2) * $countdown-item-count);
+  }
+
+  li {
+    float: left;
+    width: $countdown-item-width;
+    margin: 0 $countdown-item-margin;
+    text-align: center;
+    color: $color-primary;
+    background-color: rgba(255, 255, 255, .88);
+    padding-bottom: .7em;
+    border-radius: $countdown-item-border-radius;
+    font-family: $font-secondary;
+
+    @media (max-width: $break-xs) {
+      width: $countdown-item-width-xs;
+      margin: 0 $countdown-item-margin-xs;
+      font-size: 15px;
+      padding-bottom: .4em;
+    }
+
+    div {
+      font-size: 52px;
+      line-height: 1em;
+      font-weight: 700;
+      border-bottom: 1px solid #c6c6c6;
+      padding-top: .15em;
+      padding-bottom: .15em;
+      margin-bottom: .15em;
+      background-color: white;
+      border-top-left-radius: $countdown-item-border-radius;
+      border-top-right-radius: $countdown-item-border-radius;
+
+      @media (max-width: $break-xs) {
+        font-size: 30px;
+        padding-top: .25em;
+        padding-bottom: .25em;
+      }
+    }
+  }
+}
+
+#countdown-hero {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  @media (max-width: $break-xs) {
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+}
