@@ -21,8 +21,8 @@ $countdown-item-border-radius: 4px;
     width: $countdown-item-width;
     margin: 0 $countdown-item-margin;
     text-align: center;
-    color: $color-primary;
-    background-color: rgba(255, 255, 255, .88);
+    color: rgba(255, 255, 255, .75);
+    border: 1px solid rgba(255, 255, 255, .35);
     padding-bottom: .7em;
     border-radius: $countdown-item-border-radius;
     font-family: $font-secondary;
@@ -38,13 +38,13 @@ $countdown-item-border-radius: 4px;
       font-size: 52px;
       line-height: 1em;
       font-weight: 700;
-      border-bottom: 1px solid #c6c6c6;
+      border-bottom: 1px solid rgba(255, 255, 255, .35);
       padding-top: .15em;
       padding-bottom: .15em;
       margin-bottom: .15em;
-      background-color: white;
       border-top-left-radius: $countdown-item-border-radius;
       border-top-right-radius: $countdown-item-border-radius;
+      color: $color-primary;
 
       @media (max-width: $break-xs) {
         font-size: 30px;

@@ -63,7 +63,7 @@ $(function() {
       $hours.html(hours < 10 ? '0' + hours : hours);
       $minutes.html(minutes < 10 ? '0' + minutes : minutes);
       $seconds.html(seconds < 10 ? '0' + seconds : seconds);
-      $countdown.show();
+      $countdown.slideDown();
     } else {
       clearInterval(countdownTimer);
 
