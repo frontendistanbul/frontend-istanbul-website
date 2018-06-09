@@ -109,10 +109,16 @@
       }
     }
 
-    &.speaker-dummy{
+    &.schedule-item{
       & img{
         background-color: $color-primary;
         padding:14px;
+      }
+    }
+
+    &.speaker-dummy{
+      & img{
+        background-color: $color-primary;
       }
     }
 
