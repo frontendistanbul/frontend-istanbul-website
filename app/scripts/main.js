@@ -41,37 +41,8 @@ $(function() {
     }
   });
 
-  /* Countdown start */
-//   var DATETIME_CONFERENCE_START = new Date("June 30, 2018 09:00:00").getTime();
 
-//   var $countdown = $(".countdown");
-//   var $days = $(".countdown-days div");
-//   var $hours = $(".countdown-hours div");
-//   var $minutes = $(".countdown-minutes div");
-//   var $seconds = $(".countdown-seconds div");
-
-//   var countdownTimer = setInterval(function() {
-//     var today = new Date().getTime();
-//     var diff = DATETIME_CONFERENCE_START - today;
-//     var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-//     var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//     var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-//     var seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-//     if (days || hours || minutes || seconds) {
-//       $days.html(days < 10 ? '0' + days : days);
-//       $hours.html(hours < 10 ? '0' + hours : hours);
-//       $minutes.html(minutes < 10 ? '0' + minutes : minutes);
-//       $seconds.html(seconds < 10 ? '0' + seconds : seconds);
-//       $countdown.slideDown();
-//     } else {
-//       clearInterval(countdownTimer);
-
-//       $countdown.remove();
-//     }
-//   }, 1000);
-//   /* Countdown end */
-// });
+ });
 
 $(window).on('scroll', function() {
   var $scTop = $(window).scrollTop();
